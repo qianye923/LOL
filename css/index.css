@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  width: 100%;
+  min-width: 1000px;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  background: url("../images/图层 880.png") no-repeat top left / cover #11131f;
+  position: relative;
+}
+html body .highlight {
+  color: #50f4fb;
+}
+html body header {
+  text-align: center;
+}
+html body header .midLeft {
+  margin-top: 300px;
+  margin-bottom: 60px;
+}
+html body header .midRight {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  width: 13%;
+  z-index: 1000;
+}
+html body header .midRight ul {
+  background-color: #232d40;
+  border: 1px solid #2d3248;
+}
+html body header .midRight ul li {
+  border-top: 1px solid #1d2538;
+  border-bottom: 1px solid #34425e;
+}
+html body header .midRight ul li a {
+  display: inline-block;
+  margin: 22px 0px;
+  color: white;
+}
+html body header .midRight ul .hide {
+  display: none;
+  margin: 10px 0px;
+}
+html body header .midRight ul .hide > p {
+  font-size: 10px;
+  color: white;
+}
+html body header .headerBotton {
+  font-size: 10px;
+  color: white;
+  margin-bottom: 50px;
+}
+html body main > div {
+  border-top: 1px solid #1d2538;
+  border-bottom: 1px solid  #090a11;
+  padding: 40px 0px;
+  color: #5281d9;
+}
+html body main > div:first-child {
+  border-top: none;
+}
+html body main h1 {
+  height: 60px;
+  line-height: 60px;
+}
+html body main p,
+html body main li {
+  height: 30px;
+  line-height: 30px;
+  color: #5f7db8;
+}
+html body main .numbOne p {
+  position: relative;
+}
+html body main .numbOne p button {
+  position: absolute;
+  top: -5px;
+  right: -110px;
+  height: 30px;
+  width: 100px;
+  border: 2px solid #5f7db8;
+  border-radius: 15px;
+  background-color: #11131f;
+  color: #5281d9;
+}
+html body main .numbOne .explanation {
+  font-size: 12px;
+}
+html body main .numbOne .QMoney {
+  position: relative;
+}
+html body main .numbOne .QMoney .get {
+  position: absolute;
+  top: 90px;
+  left: 400px;
+}
+html body main .numbOne .QMoney .get p {
+  color: white;
+}
+html body main .numbOne .QMoney .get > div {
+  height: 20px;
+  width: 268px;
+  border-radius: 10px;
+  background-color: black;
+}
+html body main .numbOne .QMoney .get > div p {
+  height: 100%;
+  width: 60%;
+  border-radius: 10px;
+  background-color: skyblue;
+}
+html body main .numbOne .QMoney button,
+html body main .numbOne .QMoney .oneBtn {
+  position: absolute;
+  top: 95px;
+  left: 700px;
+  width: 118px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: yellow;
+}
+html body main .numbTwo .center {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+html body main .numbTwo .getImg ul {
+  margin: 0 auto;
+  width: 700px;
+  height: 280px;
+  background: url("../images/03img/DrMundo_3.png") no-repeat;
+}
+html body main .numbTwo .getImg ul .one {
+  margin-left: 50px;
+}
+html body main .numbTwo .getImg ul .two {
+  margin-left: 270px;
+  margin-top: -30px;
+}
+html body main .numbTwo .getImg ul .three {
+  margin-left: 510px;
+  margin-top: -30px;
+}
+html body main .numbTwo .getImg > div {
+  text-align: center;
+}
+html body main .numbTwo .getImg > div h2 {
+  margin-top: 20px;
+  margin-bottom: -25px;
+}
+html body main .numbTwo .getImg > div h2 span,
+html body main .numbTwo .getImg > div h2 .bigFont {
+  font-size: 42px;
+  color: yellow;
+}
+html body main .numbTwo .getImg > div button {
+  height: 50px;
+  line-height: 50px;
+  width: 160px;
+  background-color: yellow;
+}
+html body main .numbThree .threeImg ul li {
+  display: inline-block;
+  width: 18.5%;
+  height: 250px;
+  box-sizing: border-box;
+  border: 1px solid gold;
+  margin: 0.5% ;
+  position: relative;
+}
+html body main .numbThree .threeImg ul li img {
+  width: 100%;
+  height: 100%;
+}
+html body main .numbThree .threeImg ul li > div {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  height: 60px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+html body main .numbFour .city {
+  margin-top: 40px;
+  height: 40px;
+  line-height: 20px;
+  border-bottom: 2px solid  #1d2538;
+}
+html body main .numbFour .city h2 {
+  color: white;
+  display: inline-block;
+}
+html body main .numbFour .city a {
+  font-size: 12px;
+  text-decoration: underline;
+}
+html body main .bar .tempFoks {
+  margin-top: 20px;
+}
+html body main .bar .tempFoks > div {
+  display: flex;
+  color: gray;
+}
+html body main .bar .tempFoks > div > div {
+  height: 272px;
+  flex: 1;
+  margin: 5px 3px;
+  justify-content: space-between;
+}
+html body main .bar .tempFoks > div > div:last-child {
+  box-sizing: border-box;
+  padding: 22px;
+  border-right: 1px solid  #a9732c;
+}
+html body main .bar .tempFoks > div > div:last-child > div {
+  margin: 16px 0px;
+  color: yellow;
+  font-size: 12px;
+}
+html body main .bar .tempFoks > div > div:last-child > div h2 {
+  font-size: 26px;
+}
+html body main .bar .tempFoks > div > div:last-child p {
+  color: gray;
+}
+html body main .bar > p {
+  text-align: center;
+  margin-top: 23px;
+  margin-bottom: 20px;
+}
+html body main .bar > div {
+  text-align: center;
+}
+html body main .bar > div button {
+  height: 37px;
+  width: 115px;
+  border-radius: 5px;
+  background-color: yellow;
+  margin: 35px;
+}
+html body .numbFive ul li .highlight {
+  color: #50f4fb;
+}
+html footer {
+  width: 100%;
+  color: #515151;
+  padding: 30px;
+  font-size: 12px;
+  text-align: center;
+  background: #000000;
+}
+html footer ul li {
+  display: inline-block;
+}
+html footer ul li a {
+  color: #515151;
+}
+html footer ul li span {
+  margin-left: 5px;
+}
+html footer .enTime {
+  margin: 3px;
+}

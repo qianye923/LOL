@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "class":"one",
+        "imgUrl": "../../images/03img/p1.png"
+    },
+    {
+        "id": 2,
+        "class":"two",
+        "imgUrl": "../../images/03img/达米.png"
+    },
+    {
+        "id": 3,
+        "class":"three",
+        "imgUrl": "../../images/03img/p3.png"
+    }
+ 
+]

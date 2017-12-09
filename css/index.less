@@ -1,0 +1,323 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    height:100%;
+    width:100%;
+    min-width:1000px;
+    body{
+        width:100%;
+        height:100%;
+        background:url("../images/图层 880.png") no-repeat top left/cover #11131f;
+   
+        position:relative;
+       .highlight{
+            color:#50f4fb;
+             
+ }
+   
+//页面的头部     
+     header{
+        text-align:center;
+        .midLeft{
+            margin-top:300px;
+            margin-bottom:60px;
+        };
+        .midRight{
+            position:fixed;
+            top:20%;
+            right:3%;
+            width:13%;
+            z-index:1000;
+            ul{
+                background-color:#232d40;
+                border:1px solid #2d3248;
+                li{
+                    border-top:1px solid #1d2538;
+                    border-bottom:1px solid #34425e;
+                    a{
+                      display:inline-block;
+                      margin:22px 0px;
+                      color:white;
+                    }
+                }
+                .hide{
+                        display:none;
+                        margin:10px 0px;
+                        >p{
+                         font-size:10px;
+                         color:white;
+                        }
+                }
+               
+            }
+            
+        };
+         .headerBotton{
+          font-size:10px;
+          color:white;
+          margin-bottom:50px;
+        }
+    }
+ // 页面的内容部分
+   main{
+        >div{
+            border-top:1px solid #1d2538;
+            border-bottom:1px solid  #090a11;
+            padding:40px 0px;
+            color:#5281d9;
+            &:first-child{
+                  border-top:none;
+            }
+        }
+         h1{
+               height:60px;
+               line-height:60px;
+            };
+     
+          p,li{
+             height:30px;
+             line-height:30px;
+             color:#5f7db8;
+          }
+      
+     //    num1每日征战任务
+       .numbOne{
+           p{
+               position:relative;
+               button{
+                   position:absolute;
+                   top:-5px;
+                   right:-110px;
+                    height:30px;
+                    width:100px;
+                    border: 2px solid #5f7db8;
+                    border-radius:15px; 
+                    background-color:#11131f;
+                    color:#5281d9; 
+               }
+           };
+            .explanation{
+                font-size:12px;
+            };
+            
+             .QMoney{
+                position: relative;
+                 .get{
+                       position: absolute;
+                        top:90px;
+                        left:400px;
+                        p{
+                            color:white;
+                        }
+                     >div{
+                         height:20px;
+                         width:268px;
+                         border-radius:10px;
+                         background-color:black;
+                         p{
+                             height:100%;
+                             width:60%;
+                             border-radius:10px;
+                             background-color:skyblue;
+                         }
+                   
+                     }
+                 }
+               button,.oneBtn{
+                    position:absolute;
+                    top:95px;
+                    left:700px;
+                    width:118px;
+                    height:40px;
+                    line-height:40px;
+                    text-align:center;
+                    border-radius: 5px;
+                    background-color:yellow;
+                }
+             }
+       }
+
+
+       // num2终极征战任务
+       .numbTwo{
+           .center{
+               margin-top:40px;
+               margin-bottom:10px;
+           }
+            .getImg{
+                ul{
+                    margin:0 auto;
+                    width: 700px;
+                    height: 280px;
+                    background: url("../images/03img/DrMundo_3.png") no-repeat;
+                  
+                    .one{
+                        margin-left:50px;
+                    }
+                    .two{
+                        margin-left:270px;
+                        margin-top:-30px;
+                    };
+                    .three{
+                        margin-left:510px;
+                        margin-top:-30px;
+                    }
+                }
+               >div{
+                     text-align:center;
+                    h2{
+                       margin-top:20px;
+                        margin-bottom:-25px;
+                    span,.bigFont{
+                        font-size:42px;
+                        color:yellow;
+                    }
+                 }
+                  button{
+                    height:50px;
+                    line-height:50px;
+                    width:160px;
+                    background-color:yellow;
+                }
+               }
+            }
+       }
+
+       //   num3权限网吧限时狂欢 
+       .numbThree{
+           .threeImg{
+               ul{
+                   li{
+                       display:inline-block;
+                       width:18.5%;
+                       height:250px;
+                       box-sizing:border-box;
+                       border:1px solid gold;
+                       margin:0.5% ;
+                       position:relative;
+                       img{
+                           width:100%;
+                           height:100%;
+                       };
+                        >div{
+                            position:absolute;
+                            width:100%;
+                            bottom:0px;
+                            left:0px;
+                            height:60px;
+                            text-align:center;
+                            background: rgba(0, 0, 0,0.7);
+                        }
+                   }
+               }
+           }
+       }
+
+
+        //num4征战新赛季，特权敞开玩
+      .numbFour{
+       .city{
+           margin-top:40px;
+           height:40px;
+           line-height:20px;
+           border-bottom:2px solid  #1d2538;
+         h2{
+            color:white;
+            display:inline-block;
+           }
+        a{
+            font-size:12px;
+            text-decoration: underline;
+          }
+        }
+      }
+        //动态生成图文盒子
+       .bar{
+        .tempFoks{ 
+             margin-top:20px;
+           >div{
+              display:flex;
+              color:gray;
+                 >div{
+                   height:272px;
+                   flex:1;
+                   margin:5px 3px;
+                   justify-content: space-between;
+                 
+                  &:last-child{
+                    box-sizing: border-box;
+                     padding:22px;
+                     border-right:1px solid  #a9732c;
+                      >div{
+                          margin:16px 0px;;
+                          h2{
+                              font-size:26px;
+                          }
+                        color:yellow;
+                        font-size:12px;
+
+                       };
+                    p{
+                        color:gray;
+                    }
+                   }
+               };
+            }
+           }
+        >p{   text-align: center;
+               margin-top:23px;
+               margin-bottom:20px;
+            }
+        >div{
+              text-align:center;
+           
+                 button{
+                   height:37px;
+                   width:115px;
+                   border-radius: 5px;
+                   background-color:yellow;
+                   margin:35px;
+               }
+          }
+       }
+    }
+        // ！num5 活动规则 
+     .numbFive{
+            ul{
+                li{
+                    .highlight{
+                        color:#50f4fb;
+                    }
+                }
+            }
+        }
+   }
+//底部
+    footer{
+        width:100%;
+        color:#515151;
+        padding:30px;
+        font-size:12px;
+        text-align:center;
+        background:#000000;
+        ul{
+            li{
+              display:inline-block;
+                a{
+                 color:#515151;
+                };
+                span{
+                   margin-left:5px;
+                };
+            }
+        }
+        .enTime{
+           margin:3px;
+        };
+    }
+ }
+
+

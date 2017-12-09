@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet/less" href="./css/index.less">
+    <script src="./lib/less.js"></script>
+</head>
+
+<body>
+    <!-- 页面的头部 -->
+    <header class="heroPrivileges">
+        <p class="topLogo">
+            <img src="../images/logo.png" alt="">
+        </p>
+        <div class="midLeft">
+            <img src="./images/03img/组 3 副本 8 拷贝 12.png" alt="">
+        </div>
+        <div class="midRight">
+            <ul>
+                <li><a href="#">返回顶部</a></li>
+                <li><a href="#">每日征战任务</a></li>
+                <li><a href="#">终极征战任务</a></li>
+                <li><a href="#">特权网吧显示狂欢</a></li>
+                <li><a href="#">征战新赛季，特权敞开玩</a></li>
+                <li class="show">
+                    <a href="#">查找身边特权网吧</a><br>
+                    <a href="#">  
+                        <img class="showOrhide" src="../images/微信图片_20171202204708.png" alt="">
+                        <img src="../images/圆角矩形 1 拷贝 6.png" alt="">
+                    </a>
+                </li>
+                <li class="hide">
+                    <img src="../images/微信图片_20171202204528.png" alt="">
+                    <p>扫码关注银珠英雄联盟公众号</p>
+                </li>
+            </ul>
+        </div>
+        <div class="headerBotton">
+            <p>当前值于<span class="highlight">大大网吧</span>尊享<span class="highlight">英雄联盟网吧特权</span>&nbsp;&nbsp; 欢迎您，285432708
+                <a href="#">注册</a>
+            </p>
+        </div>
+    </header>
+    <!-- 页面的中间内容部分 -->
+    <main class="w">
+        <!-- num1每日征战任务 -->
+        <div class="numbOne">
+            <h1>每日征战任务</h1>
+            <p>活动期间每日在特权网吧 中使用特权到<span class="highlight">3场</span>游戏的胜利，当日即可领取<span>100币</span>，每日限量，先到先得！<button>领取记录</button>
+            </p>
+            <p class="explanation">(人机和自定义模式除外，不同网吧的胜利可累计，数据同步需2小时)</p>
+
+            <div class="QMoney">
+                <img src="./images/03img/Q币1.png" alt="">
+                <div class="get">
+                    <P>几日限量Q币以获取 &nbsp;<span class="getNum">60%</span>
+                    </P>
+                    <div>
+                        <p class="percent"></p>
+                    </div>
+
+                </div>
+                <button class="oneBtn">领取今日Q币</button>
+            </div>
+        </div>
+        <!-- num2终极征战任务 -->
+        <div class="numbTwo">
+            <h1>每日征战任务</h1>
+            <p>活动期间在特权网吧中使用特权拿到<span class="highlight">5场</span>即可领取随机1款<span class="highlight">7天体验或非期限皮肤奖励</span>！
+            </p>
+            <p class="explanation">(人机和自定义模式除外，不同网吧的胜利可累计，数据同步需2小时)</p>
+
+            <p class="center">40款7天体验或非期限皮肤中的1款</p>
+
+            <div class="getImg">
+
+                <ul class="tempTwo">
+
+                    <script type="text/html" id="numTwo">
+                        {{each datas}}
+                        <li class="{{$value.class}}" id="{{$value.id}}">
+                            <a href="#">
+                                     <img src="{{$value.imgUrl}}" alt="" >  
+                                </a>
+                        </li>
+                        {{/each}}
+                    </script>
+                </ul>
+
+                <div>
+                    <h2>我的胜场数&nbsp;<span class="bigFont">2</span>/5</h2>
+                    <button class="center">领取奖励</button>
+                </div>
+            </div>
+        </div>
+        <!-- num3权限网吧限时狂欢 -->
+        <div class="numbThree clearfix">
+            <h1>权限网吧限时狂欢</h1>
+            <p>活动期间,钻石特权网吧限时轮换<span class="highlight">20款</span>精美皮肤，黄金即钻石特权网吧更有<span class="highlight">30%金币及经验加成！</span>
+            </p>
+
+            <img src="./images/03img/组 92.png" alt="">
+
+            <div class="threeImg clearfix">
+                <ul class="tempThree">
+
+                    <script type="text/html" id="numThree">
+                        {{each datas}}
+                        <li>
+                            <a href="#" style="display:block">
+                             <img src="{{$value.imgUrl}}"  class="lazy"   alt="" >
+                            </a>
+                            <div>
+                                <p class="heroType">
+                                    {{$value.heroType}}</p>
+                                <p class="heroName"> {{$value.heroName}}</p>
+                            </div>
+                        </li>
+                        {{/each}}
+                    </script>
+                </ul>
+            </div>
+        </div>
+        <!-- num4征战新赛季，特权敞开玩 -->
+        <div class="numbFour">
+            <h1>征战新赛季，特权敞开玩</h1>
+            <p>活动期间,精选各省高人气特权网吧，多送超多福利，助力征战新赛季，不怕网费贵，特权敞开玩！
+            </p>
+            <div class="city">
+                <h2>深圳市</h2>
+                <a href="#" class="cityToggle">切换城市</a>
+            </div>
+
+            <div class="bar">
+                <ul class="tempFoks">
+
+                    <script type="text/html" id="tempFok">
+                        {{each datas}}
+                        <div>
+                            <div><img src="{{$value.imgUrl}}" alt=""></div>
+                            <div style="background:url('{{$value.imgUrl}}')">
+                                <h1>{{$value.title}}</h1>
+                                <div>
+                                    <h2>{{$value.phoneMoney}}</h2>
+                                    {{$value.time}}
+                                </div>
+                                <p>{{$value.phone}}</p>
+                                <p>{{$value.addr}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </script>
+                </ul>
+                <p>
+                    总共<span>20</span>条记录&nbsp;当前<span>1</span>/<span>4</span>页 &nbsp;<span class="btn">后一页</span> &nbsp;转到
+                </p>
+                <div>
+                    <img src="./images/03img/活动宣传物料下载.png" alt=""><br>
+                    <button>海报下载</button> <button>展架下载</button>
+                </div>
+            </div>
+        </div>
+        <!-- ！ 活动规则 -->
+        <div class="numbFive">
+            <h1>活动规则</h1>
+            <ul>
+                <li>1、本活动需在特权网吧的特权机器登录游戏<span class="
+highlight">（登录LOL客户端商后,右上角旁出现特权图标）</span>;
+                </li>
+                <li>2、本页面游戏对局胜场数据会在对局结束<span class="
+highlight">2小时</span>同步刷新;</li>
+                <li>3、奖励领取截止时间为活动结束后3天，即<span class="
+highlight">12月6日-28日</span>均可领取奖励;</li>
+                <li>4、同个用户（QQ号）在不同特权网吧使用特权机器进行游戏的<span class="
+highlight">胜场可以累计计算</span>;</li>
+                <li>5、<span class="
+highlight">20款</span>限时轮换皮肤限在开通钻石特权的机器上体验</li>
+                <li>6、本次活动最终解释权归英雄联盟网吧特权所有。</li>
+            </ul>
+        </div>
+    </main>
+    <!-- 页面的底部 -->
+    <footer>
+        <ul>
+            <li><a href="#">腾讯互动娱乐<span>|</span></a></li>
+            <li><a href="#">服务条款<span>|</span></a></li>
+            <li><a href="#">广告服务<span>|</span></a></li>
+            <li><a href="#">腾讯服务招聘<span>|</span></a></li>
+            <li><a href="#">腾讯游戏客服<span>|</span></a></li>
+            <li><a href="#">游戏地图<span>|</span></a></li>
+            <li><a href="#">游戏活动<span>|</span></a></li>
+            <li><a href="#">商务合作<span>|</span></a></li>
+            <li><a href="#">网站导航</a></li>
+        </ul>
+        <p class="enTime">COPYRGHT&nbsp;©&nbsp;1998-2016 TENCENT.ALL&nbsp;RIGHTS&nbsp; RESERVED</p>
+        <p class="copyRight">腾讯公司 &nbsp;版权所有</p>
+    </footer>
+</body>
+
+</html>
+<script src="./lib/jquery-1.12.4.min.js"></script>
+<script src="./lib/prefixfree.min.js"></script>
+<script src="./lib/template.js"></script>
+<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+
+<script src="./js/index.js"></script>
+<script>
+    $("img.lazy").lazyload({
+        effect: "fadeIn"
+    });
+
+</script>
